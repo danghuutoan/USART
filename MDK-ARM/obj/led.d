@@ -1,0 +1,12 @@
+.\obj\led.o: ..\Api\led.c
+.\obj\led.o: ..\Api\include\led.h
+.\obj\led.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
+.\obj\led.o: ..\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\obj\led.o: ..\CMSIS\Include\core_cm4.h
+.\obj\led.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\led.o: ..\CMSIS\Include\core_cmInstr.h
+.\obj\led.o: ..\CMSIS\Include\core_cmFunc.h
+.\obj\led.o: ..\CMSIS\Include\core_cm4_simd.h
+.\obj\led.o: ..\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
+.\obj\led.o: ..\Api\include\stm32f4xx_conf.h
+.\obj\led.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h

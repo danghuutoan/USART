@@ -1,0 +1,14 @@
+.\obj\com.o: ..\Api\com.c
+.\obj\com.o: ..\Api\include\com.h
+.\obj\com.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\com.o: ..\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\obj\com.o: ..\CMSIS\Include\core_cm4.h
+.\obj\com.o: ..\CMSIS\Include\core_cmInstr.h
+.\obj\com.o: ..\CMSIS\Include\core_cmFunc.h
+.\obj\com.o: ..\CMSIS\Include\core_cm4_simd.h
+.\obj\com.o: ..\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
+.\obj\com.o: ..\Api\include\stm32f4xx_conf.h
+.\obj\com.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h
+.\obj\com.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
+.\obj\com.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h
+.\obj\com.o: ..\STM32F4xx_StdPeriph_Driver\inc\misc.h

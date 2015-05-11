@@ -1,0 +1,17 @@
+--cpu Cortex-M4.fp
+".\obj\retarget.o"
+".\obj\main.o"
+".\obj\misc.o"
+".\obj\stm32f4xx_gpio.o"
+".\obj\stm32f4xx_rcc.o"
+".\obj\stm32f4xx_tim.o"
+".\obj\stm32f4xx_usart.o"
+".\obj\system_stm32f4xx.o"
+".\obj\startup_stm32f401xx.o"
+".\obj\com.o"
+".\obj\led.o"
+".\obj\usart.o"
+--library_type=microlib --strict --scatter ".\obj\project.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\lst\project.map" -o .\obj\project.axf

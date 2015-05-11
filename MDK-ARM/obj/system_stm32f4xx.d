@@ -1,0 +1,9 @@
+.\obj\system_stm32f4xx.o: ..\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+.\obj\system_stm32f4xx.o: ..\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\obj\system_stm32f4xx.o: ..\CMSIS\Include\core_cm4.h
+.\obj\system_stm32f4xx.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\system_stm32f4xx.o: ..\CMSIS\Include\core_cmInstr.h
+.\obj\system_stm32f4xx.o: ..\CMSIS\Include\core_cmFunc.h
+.\obj\system_stm32f4xx.o: ..\CMSIS\Include\core_cm4_simd.h
+.\obj\system_stm32f4xx.o: ..\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
+.\obj\system_stm32f4xx.o: ..\Api\include\stm32f4xx_conf.h

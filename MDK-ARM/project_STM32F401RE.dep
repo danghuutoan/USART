@@ -1,10 +1,11 @@
 Dependencies for Project 'project', Target 'STM32F401RE': (DO NOT MODIFY !)
-F (..\App\retarget.c)(0x55430472)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork -I..\CMSIS\Include -I..\CMSIS\Device\ST\STM32F4xx\Include -I..\App\include -I..\Api\include -I..\STM32F4xx_StdPeriph_Driver\inc --c99-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-DSTM32F401xx -DUSE_STDPERIPH_DRIVER -DSTM32F401xx -DHSE_VALUE="8000000" -DSTM32F401xx-o .\obj\retarget.o --omf_browse .\obj\retarget.crf --depend .\obj\retarget.d)
+F (..\App\retarget.c)(0x5550E997)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork -I..\CMSIS\Include -I..\CMSIS\Device\ST\STM32F4xx\Include -I..\App\include -I..\Api\include -I..\STM32F4xx_StdPeriph_Driver\inc --c99-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-DSTM32F401xx -DUSE_STDPERIPH_DRIVER -DSTM32F401xx -DHSE_VALUE="8000000" -DSTM32F401xx-o .\obj\retarget.o --omf_browse .\obj\retarget.crf --depend .\obj\retarget.d)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53464854)
 I (..\Api\include\com.h)(0x55430487)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53464854)
-F (..\App\main.c)(0x5550E35D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork -I..\CMSIS\Include -I..\CMSIS\Device\ST\STM32F4xx\Include -I..\App\include -I..\Api\include -I..\STM32F4xx_StdPeriph_Driver\inc --c99-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-DSTM32F401xx -DUSE_STDPERIPH_DRIVER -DSTM32F401xx -DHSE_VALUE="8000000" -DSTM32F401xx-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
-I (..\App\include\global.h)(0x5550E064)
+F (..\App\main.c)(0x5550EA43)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork -I..\CMSIS\Include -I..\CMSIS\Device\ST\STM32F4xx\Include -I..\App\include -I..\Api\include -I..\STM32F4xx_StdPeriph_Driver\inc --c99-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-DSTM32F401xx -DUSE_STDPERIPH_DRIVER -DSTM32F401xx -DHSE_VALUE="8000000" -DSTM32F401xx-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+I (..\App\include\global.h)(0x5550E9F7)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53464854)
 I (..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x53DBAFAD)
 I (..\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5550E2B3)
 I (..\CMSIS\Include\core_cm4.h)(0x53C7D530)
@@ -19,6 +20,7 @@ I (..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x53DBAFAD)
 I (..\Api\include\led.h)(0x551A8708)
 I (..\Api\include\usart.h)(0x5550E03C)
 I (..\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x53DBAFAD)
+I (..\Api\include\com.h)(0x55430487)
 F (..\STM32F4xx_StdPeriph_Driver\src\misc.c)(0x53DBB014)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork -I..\CMSIS\Include -I..\CMSIS\Device\ST\STM32F4xx\Include -I..\App\include -I..\Api\include -I..\STM32F4xx_StdPeriph_Driver\inc --c99-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-DSTM32F401xx -DUSE_STDPERIPH_DRIVER -DSTM32F401xx -DHSE_VALUE="8000000" -DSTM32F401xx-o .\obj\misc.o --omf_browse .\obj\misc.crf --depend .\obj\misc.d)
 I (..\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x53DBAFAD)
 I (..\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5550E2B3)
@@ -108,17 +110,3 @@ I (..\CMSIS\Include\core_cm4_simd.h)(0x53C7D530)
 I (..\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x53DBA499)
 I (..\Api\include\stm32f4xx_conf.h)(0x55430484)
 I (..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x53DBAFAD)
-F (..\Api\usart.c)(0x5550E02B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork -I..\CMSIS\Include -I..\CMSIS\Device\ST\STM32F4xx\Include -I..\App\include -I..\Api\include -I..\STM32F4xx_StdPeriph_Driver\inc --c99-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-DSTM32F401xx -DUSE_STDPERIPH_DRIVER -DSTM32F401xx -DHSE_VALUE="8000000" -DSTM32F401xx-o .\obj\usart.o --omf_browse .\obj\usart.crf --depend .\obj\usart.d)
-I (..\Api\include\usart.h)(0x5550E03C)
-I (..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x53DBAFAD)
-I (..\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5550E2B3)
-I (..\CMSIS\Include\core_cm4.h)(0x53C7D530)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53464854)
-I (..\CMSIS\Include\core_cmInstr.h)(0x53C7D530)
-I (..\CMSIS\Include\core_cmFunc.h)(0x53C7D530)
-I (..\CMSIS\Include\core_cm4_simd.h)(0x53C7D530)
-I (..\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x53DBA499)
-I (..\Api\include\stm32f4xx_conf.h)(0x55430484)
-I (..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x53DBAFAD)
-I (..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x53DBAFAD)
-I (..\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x53DBAFAD)

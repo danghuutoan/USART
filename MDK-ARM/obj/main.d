@@ -1,5 +1,6 @@
 .\obj\main.o: ..\App\main.c
 .\obj\main.o: ..\App\include\global.h
+.\obj\main.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdio.h
 .\obj\main.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
 .\obj\main.o: ..\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 .\obj\main.o: ..\CMSIS\Include\core_cm4.h
@@ -14,3 +15,4 @@
 .\obj\main.o: ..\Api\include\led.h
 .\obj\main.o: ..\Api\include\usart.h
 .\obj\main.o: ..\STM32F4xx_StdPeriph_Driver\inc\misc.h
+.\obj\main.o: ..\Api\include\com.h

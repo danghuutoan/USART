@@ -33,3 +33,6 @@
 .\obj\main.o: ..\STM32F4xx_StdPeriph_Driver\inc\misc.h
 .\obj\main.o: ..\Api\include\com.h
 .\obj\main.o: ..\Api\include\encoder.h
+.\obj\main.o: ..\Api\include\gpt.h
+.\obj\main.o: ..\Api\include\motor.h
+.\obj\main.o: ..\Api\include\pwm.h

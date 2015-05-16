@@ -4,39 +4,17 @@
 #include "usart.h"
 #include "com.h"
 #include "encoder.h"
-
-//void configureEncoder() {
-//    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE);
-//    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
-//    
-//    GPIO_InitTypeDef GPIO_InitStructure;
-//    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
-//    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;
-//    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
-//    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
-//    
-//    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6| GPIO_Pin_7;
-//    GPIO_Init(GPIOB, &GPIO_InitStructure);
-//    
-//    GPIO_PinAFConfig(GPIOB, GPIO_PinSource6, GPIO_AF_TIM4);
-//    GPIO_PinAFConfig(GPIOB, GPIO_PinSource7, GPIO_AF_TIM4);
-//    
-//    TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
-//    TIM_TimeBaseStructure.TIM_Period = 0xffff;
-//    TIM_TimeBaseStructure.TIM_Prescaler = 0;
-//    TIM_TimeBaseStructure.TIM_ClockDivision = 0;
-//    TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
-//    
-//    TIM_TimeBaseInit(TIM4, &TIM_TimeBaseStructure);
-//    
-//    /* Configure the timer */
-//    TIM_EncoderInterfaceConfig(TIM4, TIM_EncoderMode_TI12, TIM_ICPolarity_Rising, TIM_ICPolarity_Rising);
-//    
-//    /* TIM4 counter enable */
-//    TIM_Cmd(TIM4, ENABLE);
-//}
-
-
+#include "gpt.h"
+#include "motor.h"
+#include "pwm.h"
+/*min=428*/
+PWM_typedef pwm=
+{
+	.chid                   =   PWM_CH1,    
+  .duty_cycle             =   427,       /* start default dutycycle value  = 0 */
+  .duty_min               =   PWM_MIN_DUTYCYCLE,
+  .duty_max               =   PWM_MAX_DUTYCYCLE  
+};
 /* Task to be created. */
 void vTaskCode( void * pvParameters )
 {
@@ -44,12 +22,12 @@ void vTaskCode( void * pvParameters )
   {
       /* Task code goes here. */
 		//printf("ok : %d\r\n",TIM_GetCounter(TIM4));
-		printf("ok : %d\r\n",ENC_GetCounter());
-		if(Encoder_GetDir(TIM_CH4))
-			printf("backward\r\n");
-		else
-			printf("forward\r\n");
-		vTaskDelay(1000);
+		printf("ok : %d\r\n",Encoder_GetVal(ENC_TIM));
+//		if(Encoder_GetDir(ENC_TIM))
+//			printf("backward\r\n");
+//		else
+//			printf("forward\r\n");
+		vTaskDelay(100);
   }
 }
 
@@ -58,9 +36,13 @@ int main(void)
 	TaskHandle_t xHandle = NULL;
 
 	COM_Init(COM2,COM_BAUD_38400,NULL);
-	Encoder_Init(TIM_CH4);
+	motor_Init();
+	Encoder_Init(ENC_TIM);
 	LED_Init();
-
+	
+	PWM_Init(&pwm);
+	PWM_SetDutyCycle(&pwm);
+	PWM_Start();
 
 	LED_On();
 	printf("hello\r\n");

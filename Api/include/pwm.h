@@ -35,7 +35,7 @@
 #define PWM_VERSION_REV          0
 
 #define PWM_MAX_DUTYCYCLE        1000
-#define PWM_MIN_DUTYCYCLE        0
+#define PWM_MIN_DUTYCYCLE        427
 
 #define PWM_NBR_CHANNEL          4
 #define PWM_FAIL                 0

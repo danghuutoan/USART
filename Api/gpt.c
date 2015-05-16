@@ -44,14 +44,14 @@ typedef struct _GPT_iPinType
 static const GPT_iPinType GPT_iPinParam[] = 
 {
   {
-    .Clock = RCC_AHB1Periph_GPIOA,
-    .Port  = GPIOA,
-    .PinNum= GPIO_Pin_0
+    .Clock = RCC_AHB1Periph_GPIOC,
+    .Port  = GPIOC,
+    .PinNum= GPIO_Pin_8
   },
   {
-    .Clock = RCC_AHB1Periph_GPIOA,
-    .Port  = GPIOA,
-    .PinNum= GPIO_Pin_0,
+    .Clock = RCC_AHB1Periph_GPIOC,
+    .Port  = GPIOC,
+    .PinNum= GPIO_Pin_9,
   },
   {
     .Clock = RCC_AHB1Periph_GPIOD,

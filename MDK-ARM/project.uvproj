@@ -482,6 +482,21 @@
               <FileType>1</FileType>
               <FilePath>..\Api\encoder.c</FilePath>
             </File>
+            <File>
+              <FileName>gpt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Api\gpt.c</FilePath>
+            </File>
+            <File>
+              <FileName>motor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Api\motor.c</FilePath>
+            </File>
+            <File>
+              <FileName>pwm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Api\pwm.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
